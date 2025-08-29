@@ -1,1 +1,22 @@
-
+{
+  "name": "Ryu",
+  "portrait": "assets/images/ryu.png",
+  "moves": [
+    {
+      "name": "Hadoken",
+      "input": "↓ ↘ → + P"
+    },
+    {
+      "name": "Shoryuken",
+      "input": "→ ↓ ↘ + P"
+    },
+    {
+      "name": "Tatsumaki Senpukyaku",
+      "input": "↓ ↙ ← + K"
+    },
+    {
+      "name": "Solar Plexus Strike",
+      "input": "→ + HP"
+    }
+  ]
+}
