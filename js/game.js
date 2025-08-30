@@ -10,7 +10,7 @@ const gameNames = {
 document.getElementById("game-title").innerText = gameNames[gameId] || "Unknown Game";
 
 // Example characters for SSF2T
-const characters = ["ryu", "ken"]; // Expand later
+const characters = ["ryu", "ken"]; // expand later
 
 function goHome() {
   window.location.href = "index.html";
@@ -42,7 +42,6 @@ async function loadCharacter(character) {
     const moveEl = document.createElement("div");
     moveEl.className = "move";
 
-    // Replace text inputs with icons if available
     const inputHTML = move.input.map(icon => {
       return `<img src="assets/icons/${icon}.png" alt="${icon}" class="input-icon">`;
     }).join(" ");
