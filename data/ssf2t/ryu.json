@@ -34,7 +34,7 @@
     },
     {
       "name": "Airborne Tatasumaki Senpukyaku",
-      "input": ["air", "qbc", "k"],
+      "input": ["air", "qcb", "k"],
       "type": "Input Moves"
     },
     {
