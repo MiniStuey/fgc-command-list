@@ -23,14 +23,14 @@ async function loadCharacterList() {
   container.innerHTML = "";
 
   try {
-    // Fetch the character list for this game
+    // Fetch character list for this game
     const response = await fetch(`data/${gameId}/characters.json`);
     const characters = await response.json();
 
     characters.forEach(char => {
       const btn = document.createElement("button");
-      btn.innerText = char.toUpperCase();
-      btn.onclick = () => loadCharacter(char);
+      btn.innerText = char.name;       // display name
+      btn.onclick = () => loadCharacter(char.id); // JSON filename
       container.appendChild(btn);
     });
   } catch (err) {
