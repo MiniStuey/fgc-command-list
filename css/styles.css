@@ -49,3 +49,12 @@ main {
   vertical-align: middle;
   margin: 0 2px;
 }
+
+.game-card img {
+  width: 520px;
+  height: 270px;
+  object-fit: contain; /* fits inside box */
+  background: #111; /* filler background */
+  border-radius: 6px;
+}
+
