@@ -16,7 +16,7 @@
     },
     {
       "name": "Solar Plexus Strike",
-      "input": ["f", "hp"]
+      "input": ["fwd", "hp"]
     }
   ]
 }
