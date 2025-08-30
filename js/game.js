@@ -1,4 +1,3 @@
-// Get selected game from URL
 const urlParams = new URLSearchParams(window.location.search);
 const gameId = urlParams.get("game");
 
@@ -6,30 +5,35 @@ const gameId = urlParams.get("game");
 const gameNames = {
   "ssf2t": "Super Street Fighter II Turbo",
   "sf3": "Street Fighter III: 3rd Strike"
-  // Add more games as needed
 };
 
-// Set game title
 document.getElementById("game-title").innerText = gameNames[gameId] || "Unknown Game";
-
-// Example characters array (update to match your JSON files)
-const characters = ["ryu", "ken"];
 
 // Go back to index.html
 function goHome() {
   window.location.href = "index.html";
 }
 
-// Load character buttons in sidebar
-function loadCharacterList() {
+// Load character buttons dynamically
+async function loadCharacterList() {
   const container = document.getElementById("character-select");
-  container.innerHTML = ""; // Clear any existing buttons
-  characters.forEach(char => {
-    const btn = document.createElement("button");
-    btn.innerText = char.toUpperCase();
-    btn.onclick = () => loadCharacter(char);
-    container.appendChild(btn);
-  });
+  container.innerHTML = "";
+
+  try {
+    // Fetch characters.json for this game
+    const response = await fetch(`data/${gameId}/characters.json`);
+    const characters = await response.json();
+
+    characters.forEach(char => {
+      const btn = document.createElement("button");
+      btn.innerText = char.toUpperCase();
+      btn.onclick = () => loadCharacter(char);
+      container.appendChild(btn);
+    });
+  } catch (err) {
+    console.error("Failed to load character list:", err);
+    container.innerHTML = "<p>No characters found for this game.</p>";
+  }
 }
 
 // Load character moves dynamically
@@ -47,9 +51,7 @@ async function loadCharacter(character) {
     // Group moves by type dynamically
     const moveTypes = {};
     data.moves.forEach(move => {
-      if (!moveTypes[move.type]) {
-        moveTypes[move.type] = [];
-      }
+      if (!moveTypes[move.type]) moveTypes[move.type] = [];
       moveTypes[move.type].push(move);
     });
 
@@ -83,5 +85,5 @@ async function loadCharacter(character) {
   }
 }
 
-// Initialize the sidebar
-loadCharacterList();
+// Initialize the sidebar once DOM is ready
+document.addEventListener("DOMContentLoaded", loadCharacterList);
