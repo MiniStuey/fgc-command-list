@@ -71,18 +71,22 @@ async function loadCharacter(character) {
         const moveEl = document.createElement("div");
         moveEl.className = "move";
 
-        // Generate HTML for move input icons (supports multiple alternatives)
-        const inputHTML = move.input.map(option => {
-          // If option is an array, treat as multiple icons for one alternative
-          if (Array.isArray(option)) {
+        // Generate HTML for move input icons (supports single and multiple alternatives)
+        let inputHTML = "";
+
+        if (Array.isArray(move.input[0])) {
+          // Multiple alternative sequences
+          inputHTML = move.input.map(option => {
             return option.map(icon => 
               `<span class="input-icon"><img src="assets/icons/${icon}.png" alt="${icon}"></span>`
             ).join("");
-          } else {
-            // Single icon (legacy format)
-            return `<span class="input-icon"><img src="assets/icons/${option}.png" alt="${option}"></span>`;
-          }
-        }).join(" <span>or</span> "); // separate alternatives with "or"
+          }).join(" <span>or</span> ");
+        } else {
+          // Single input sequence
+          inputHTML = move.input.map(icon => 
+            `<span class="input-icon"><img src="assets/icons/${icon}.png" alt="${icon}"></span>`
+          ).join("");
+        }
 
         moveEl.innerHTML = `<strong>${move.name}</strong> — ${inputHTML}`;
         section.appendChild(moveEl);
