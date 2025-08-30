@@ -3,20 +3,43 @@
   "portrait": "assets/ssf2t/ryu.png",
   "moves": [
     {
+      "name": "Solar Plexus Strike",
+      "input": ["fwd", "hp"]
+      "type": "Command Normals"
+    },
+    {
+      "name": "Collarbone Breaker",
+      "input": ["fwd", "mp"]
+      "type": "Command Normals"
+},
+    {
       "name": "Hadoken",
       "input": ["qcf", "p"]
+      "type": "Input Moves"
+    },
+    {
+      "name": "Shakunetsu Hadoken",
+      "input": ["qcb", "k"]
+      "type": "Input Moves"
     },
     {
       "name": "Shoryuken",
       "input": ["dp", "p"]
+      "type": "Input Moves"
     },
     {
       "name": "Tatsumaki Senpukyaku",
       "input": ["qcb", "k"]
+      "type": "Input Moves"
     },
     {
-      "name": "Solar Plexus Strike",
-      "input": ["fwd", "hp"]
-    }
+      "name": "Airborne Tatasumaki Senpukyaku",
+      "input": ["air", "qbc", "k"]
+      "type": "Input Moves"
+    },
+    {
+      "name": "Shinku Hadoken",
+      "input": ["qcf", "qcf", "p"]
+      "type": "Super"
   ]
 }
