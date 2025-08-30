@@ -4,6 +4,31 @@
   height: calc(100vh - 80px); /* subtract header */
 }
 
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111;   /* dark background */
+  color: #f4f4f4;           /* light text */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  background-color: #111;
+}
+
+.move {
+  background: #222;
+  color: white;
+}
+
 /* Sidebar */
 #character-select {
   width: 220px;
