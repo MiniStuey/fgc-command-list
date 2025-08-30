@@ -18,14 +18,48 @@ function goHome() {
 }
 
 // Load character buttons in sidebar
-function loadCharacterList() {
-  const container = document.getElementById("character-select");
-  characters.forEach(char => {
-    const btn = document.createElement("button");
-    btn.innerText = char.toUpperCase();
-    btn.onclick = () => loadCharacter(char);
-    container.appendChild(btn);
+async function loadCharacter(character) {
+  const response = await fetch(`data/${gameId}/${character}.json`);
+  const data = await response.json();
+
+  const container = document.getElementById("character-info");
+  container.innerHTML = `
+    <h2>${data.name}</h2>
+    <img src="${data.portrait}" alt="${data.name}" width="150">
+  `;
+
+  // Group moves by type dynamically
+  const moveTypes = {};
+  data.moves.forEach(move => {
+    if (!moveTypes[move.type]) {
+      moveTypes[move.type] = [];
+    }
+    moveTypes[move.type].push(move);
   });
+
+  // Create sections for each move type
+  for (const type in moveTypes) {
+    const section = document.createElement("div");
+    section.className = "move-section";
+
+    const title = document.createElement("h3");
+    title.innerText = type;
+    section.appendChild(title);
+
+    moveTypes[type].forEach(move => {
+      const moveEl = document.createElement("div");
+      moveEl.className = "move";
+
+      const inputHTML = move.input.map(icon => {
+        return `<span class="input-icon"><img src="assets/icons/${icon}.png" alt="${icon}"></span>`;
+      }).join(" ");
+
+      moveEl.innerHTML = `<strong>${move.name}</strong> — ${inputHTML}`;
+      section.appendChild(moveEl);
+    });
+
+    container.appendChild(section);
+  }
 }
 
 // Load character moves into sections
