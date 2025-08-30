@@ -4,42 +4,42 @@
   "moves": [
     {
       "name": "Solar Plexus Strike",
-      "input": ["fwd", "hp"]
+      "input": ["fwd", "hp"],
       "type": "Command Normals"
     },
     {
       "name": "Collarbone Breaker",
-      "input": ["fwd", "mp"]
+      "input": ["fwd", "mp"],
       "type": "Command Normals"
 },
     {
       "name": "Hadoken",
-      "input": ["qcf", "p"]
+      "input": ["qcf", "p"],
       "type": "Input Moves"
     },
     {
       "name": "Shakunetsu Hadoken",
-      "input": ["qcb", "k"]
+      "input": ["qcb", "k"],
       "type": "Input Moves"
     },
     {
       "name": "Shoryuken",
-      "input": ["dp", "p"]
+      "input": ["dp", "p"],
       "type": "Input Moves"
     },
     {
       "name": "Tatsumaki Senpukyaku",
-      "input": ["qcb", "k"]
+      "input": ["qcb", "k"],
       "type": "Input Moves"
     },
     {
       "name": "Airborne Tatasumaki Senpukyaku",
-      "input": ["air", "qbc", "k"]
+      "input": ["air", "qbc", "k"],
       "type": "Input Moves"
     },
     {
       "name": "Shinku Hadoken",
-      "input": ["qcf", "qcf", "p"]
+      "input": ["qcf", "qcf", "p"],
       "type": "Super"
     }
   ]
