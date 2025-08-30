@@ -1,6 +1,6 @@
 {
   "name": "Ryu",
-  "portrait": "assets/images/ryu.png",
+  "portrait": "assets/ssf2t/ryu.png",
   "moves": [
     {
       "name": "Hadoken",
