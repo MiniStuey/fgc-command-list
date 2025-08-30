@@ -1,21 +1,23 @@
-// Get selected game from query string
+// Get selected game from URL
 const urlParams = new URLSearchParams(window.location.search);
 const gameId = urlParams.get("game");
 
-// Map of game IDs to display names
+// Map game IDs to display names
 const gameNames = {
-  "ssf2t": "Super Street Fighter II Turbo"
+  "ssf2t": "Super Street Fighter II Turbo",
+  "sf3": "Street Fighter III: 3rd Strike"
 };
 
 document.getElementById("game-title").innerText = gameNames[gameId] || "Unknown Game";
 
-// Example characters for SSF2T
-const characters = ["ryu", "ken"]; // expand later
+// Example characters
+const characters = ["ryu", "ken"];
 
 function goHome() {
   window.location.href = "index.html";
 }
 
+// Load character buttons in sidebar
 function loadCharacterList() {
   const container = document.getElementById("character-select");
   characters.forEach(char => {
@@ -26,6 +28,7 @@ function loadCharacterList() {
   });
 }
 
+// Load character moves into sections
 async function loadCharacter(character) {
   const response = await fetch(`data/${gameId}/${character}.json`);
   const data = await response.json();
@@ -34,21 +37,30 @@ async function loadCharacter(character) {
   container.innerHTML = `
     <h2>${data.name}</h2>
     <img src="${data.portrait}" alt="${data.name}" width="150">
-    <div id="moves"></div>
+    <div id="command-normals"><h3>Command Normals</h3></div>
+    <div id="special-moves"><h3>Special Moves</h3></div>
+    <div id="supers"><h3>Supers</h3></div>
   `;
 
-  const movesDiv = document.getElementById("moves");
   data.moves.forEach(move => {
     const moveEl = document.createElement("div");
     moveEl.className = "move";
 
     const inputHTML = move.input.map(icon => {
-      return `<img src="assets/icons/${icon}.png" alt="${icon}" class="input-icon">`;
+      return `<span class="input-icon"><img src="assets/icons/${icon}.png" alt="${icon}"></span>`;
     }).join(" ");
 
     moveEl.innerHTML = `<strong>${move.name}</strong> — ${inputHTML}`;
-    movesDiv.appendChild(moveEl);
+
+    if (move.type === "Command Normal") {
+      document.getElementById("command-normals").appendChild(moveEl);
+    } else if (move.type === "Special Move") {
+      document.getElementById("special-moves").appendChild(moveEl);
+    } else if (move.type === "Super") {
+      document.getElementById("supers").appendChild(moveEl);
+    }
   });
 }
 
+// Initialize sidebar
 loadCharacterList();
