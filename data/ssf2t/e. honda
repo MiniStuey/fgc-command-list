@@ -1,0 +1,52 @@
+{
+  "name": "E. Honda",
+  "portrait": "assets/ssf2t/e. honda.png",
+  "moves": [
+    {
+      "name": "Knee Strike",
+      "input": [
+  ["fwd", "mp"],
+  ["back", mp"]
+],
+      "type": "Command Normals"
+    },
+{
+    "name": "Sweep Kick"
+    "input": [
+  ["fwd", "hp"],
+  ["back", "hp]
+],
+    "type": "Command Normals"
+},
+    {
+      "name": "Flying Sumo Press",
+      "input": ["air", "down", "mk"],
+      "type": "Command Normals"
+},
+    {
+      "name": "Hundred Hand Slap",
+      "input": ["Mash", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Sumo Headbutt",
+      "input": ["bc", "fwd", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Sumo Smash",
+      "input": ["dc", "up", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Oicho Throw",
+      "input": ["hcb", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Super Killer Head Ram",
+      "input": ["bc", "f", "bf", "p"],
+      "type": "Super"
+    }
+  ]
+}
