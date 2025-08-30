@@ -2,23 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Street Fighter Move List</title>
+  <title>Street Fighter Games</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header>
-    <h1>Street Fighter Move Reference</h1>
+    <h1>Select a Game</h1>
   </header>
 
-  <main>
-    <div id="character-select">
-      <button onclick="loadCharacter('ryu')">Ryu</button>
-      <!-- Add more fighters later -->
+  <main id="game-select">
+    <div class="game-card" onclick="selectGame('ssf2t')">
+      <img src="assets/images/ssf2t.png" alt="SSF2T Logo" width="200">
+      <p>Super Street Fighter II Turbo</p>
     </div>
 
-    <section id="character-info">
-      <!-- Character portrait + moves will load here -->
-    </section>
+    <!-- Add more games later -->
   </main>
 
   <script src="js/main.js"></script>
