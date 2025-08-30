@@ -5,24 +5,24 @@
     {
       "name": "Knee Strike",
       "input": [
-  ["fwd", "mp"],
-  ["back", mp"]
-],
+        ["fwd", "mp"],
+        ["back", "mp"]
+      ],
       "type": "Command Normals"
     },
-{
-    "name": "Sweep Kick"
-    "input": [
-  ["fwd", "hp"],
-  ["back", "hp"]
-],
-    "type": "Command Normals"
-},
+    {
+      "name": "Sweep Kick",
+      "input": [
+        ["fwd", "hp"],
+        ["back", "hp"]
+      ],
+      "type": "Command Normals"
+    },
     {
       "name": "Flying Sumo Press",
       "input": ["air", "down", "mk"],
       "type": "Command Normals"
-},
+    },
     {
       "name": "Hundred Hand Slap",
       "input": ["Mash", "p"],
