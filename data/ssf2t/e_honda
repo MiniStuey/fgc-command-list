@@ -1,6 +1,6 @@
 {
   "name": "E. Honda",
-  "portrait": "assets/ssf2t/e. honda.png",
+  "portrait": "assets/ssf2t/e_honda.png",
   "moves": [
     {
       "name": "Knee Strike",
@@ -14,7 +14,7 @@
     "name": "Sweep Kick"
     "input": [
   ["fwd", "hp"],
-  ["back", "hp]
+  ["back", "hp"]
 ],
     "type": "Command Normals"
 },
