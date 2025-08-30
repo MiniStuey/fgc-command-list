@@ -1,15 +1,15 @@
 [
-  "ryu",
-  "e_honda",
-  "blanka",
-  "guile",
-  "balrog",
-  "vega",
-  "ken",
-  "chun-li",
-  "zangief",
-  "dhalsim",
-  "sagat",
-  "m_bison",
-  "akuma"
+  { "id": "ryu", "name": "Ryu" },
+  { "id": "e_honda", "name": "E. Honda" },
+  { "id": "blanka", "name": "Blanka" },
+  { "id": "guile", "name": "Guile" },
+  { "id": "balrog", "name": "Balrog" },
+  { "id": "vega", "name": "Vega" },
+  { "id": "ken", "name": "Ken" },
+  { "id": "chunli", "name": "Chun-Li" },
+  { "id": "zangief", "name": "Zangief" },
+  { "id": "dhalsim", "name": "Dhalsim" },
+  { "id": "sagat", "name": "Sagat" },
+  { "id": "m_bison", "name": "M. Bison" },
+  { "id": "akuma", "name": "Akuma" }
 ]
