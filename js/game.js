@@ -1,36 +1,27 @@
-// Get selected game from URL
-const urlParams = new URLSearchParams(window.location.search);
-const gameId = urlParams.get("game");
+let gameId = null; // holds the currently selected game
 
-// Map game IDs to display names
-const gameNames = {
-  "ssf2t": "Super Street Fighter II Turbo",
-  "sf3": "Street Fighter III: 3rd Strike"
-  // Add more games here as needed
-};
-
-// Set game title
-document.getElementById("game-title").innerText = gameNames[gameId] || "Unknown Game";
-
-// Go back to index.html
-function goHome() {
-  window.location.href = "index.html";
+// Called when user picks a game
+function selectGame(id) {
+  gameId = id;
+  loadCharacterList();
+  document.getElementById("character-data").innerHTML =
+    "<p>Select a character to view their moves.</p>";
 }
 
-// Load character buttons dynamically
+// Load the list of characters for the current game
 async function loadCharacterList() {
   const container = document.getElementById("character-select");
   container.innerHTML = "";
 
   try {
-    // Fetch character list for this game
+    // Fetch characters.json for the selected game
     const response = await fetch(`data/${gameId}/characters.json`);
     const characters = await response.json();
 
     characters.forEach(char => {
       const btn = document.createElement("button");
-      btn.innerText = char.name;       // display name
-      btn.onclick = () => loadCharacter(char.id); // JSON filename
+      btn.innerText = char.name; // display name
+      btn.onclick = () => loadCharacter(char.id); // id = JSON filename
       container.appendChild(btn);
     });
   } catch (err) {
@@ -39,67 +30,64 @@ async function loadCharacterList() {
   }
 }
 
-// Load character moves dynamically
-async function loadCharacter(character) {
-  try {
-    const response = await fetch(`data/${gameId}/${character}.json`);
-    const data = await response.json();
+// Load data for a specific character
+async function loadCharacter(characterId) {
+  const container = document.getElementById("character-data");
+  container.innerHTML = "<p>Loading...</p>";
 
-    const container = document.getElementById("character-info");
-    container.innerHTML = `
-      <h2>${data.name}</h2>
-      <img src="${data.portrait}" alt="${data.name}" width="150">
+  try {
+    const response = await fetch(`data/${gameId}/${characterId}.json`);
+    const charData = await response.json();
+
+    let html = `
+      <h2>${charData.name}</h2>
+      <img src="${charData.portrait}" alt="${charData.name}" class="character-portrait">
     `;
 
-    // Group moves by type dynamically
-    const moveTypes = {};
-    data.moves.forEach(move => {
-      if (!moveTypes[move.type]) moveTypes[move.type] = [];
-      moveTypes[move.type].push(move);
+    // Group moves by type (Command Normals, Input Moves, Supers)
+    const groupedMoves = {};
+    charData.moves.forEach(move => {
+      if (!groupedMoves[move.type]) {
+        groupedMoves[move.type] = [];
+      }
+      groupedMoves[move.type].push(move);
     });
 
-    // Create a section for each move type
-    for (const type in moveTypes) {
-      const section = document.createElement("div");
-      section.className = "move-section";
-
-      const title = document.createElement("h3");
-      title.innerText = type;
-      section.appendChild(title);
-
-      moveTypes[type].forEach(move => {
-        const moveEl = document.createElement("div");
-        moveEl.className = "move";
-
-        // Generate HTML for move input icons (supports single and multiple alternatives)
+    // Render each move section
+    for (const type in groupedMoves) {
+      html += `<h3>${type}</h3><ul>`;
+      groupedMoves[type].forEach(move => {
         let inputHTML = "";
 
+        // Check if move.input is multiple alternatives or single sequence
         if (Array.isArray(move.input[0])) {
-          // Multiple alternative sequences
-          inputHTML = move.input.map(option => {
-            return option.map(icon => 
-              `<span class="input-icon"><img src="assets/icons/${icon}.png" alt="${icon}"></span>`
-            ).join("");
-          }).join(" <span>or</span> ");
+          // Multiple alternatives
+          inputHTML = move.input
+            .map(option =>
+              option
+                .map(icon =>
+                  `<span class="input-icon"><img src="assets/icons/${icon}.png" alt="${icon}"></span>`
+                )
+                .join("")
+            )
+            .join(' <span class="or-text">or</span> ');
         } else {
           // Single input sequence
-          inputHTML = move.input.map(icon => 
-            `<span class="input-icon"><img src="assets/icons/${icon}.png" alt="${icon}"></span>`
-          ).join("");
+          inputHTML = move.input
+            .map(icon =>
+              `<span class="input-icon"><img src="assets/icons/${icon}.png" alt="${icon}"></span>`
+            )
+            .join("");
         }
 
-        moveEl.innerHTML = `<strong>${move.name}</strong> — ${inputHTML}`;
-        section.appendChild(moveEl);
+        html += `<li><strong>${move.name}:</strong> ${inputHTML}</li>`;
       });
-
-      container.appendChild(section);
+      html += `</ul>`;
     }
+
+    container.innerHTML = html;
   } catch (err) {
-    console.error("Failed to load character JSON:", err);
-    document.getElementById("character-info").innerHTML =
-      "<p>Failed to load character data.</p>";
+    console.error("Failed to load character data:", err);
+    container.innerHTML = "<p>Failed to load character data.</p>";
   }
 }
-
-// Initialize the sidebar once DOM is ready
-document.addEventListener("DOMContentLoaded", loadCharacterList);
