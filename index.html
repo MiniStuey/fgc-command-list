@@ -11,19 +11,57 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      text-align: center;
     }
 
     header {
       padding: 20px;
       background: #222;
+      text-align: center;
+    }
+
+    main {
+      display: flex;
+      height: calc(100vh - 100px);
+    }
+
+    /* Sidebar for character list */
+    #character-select {
+      width: 220px;
+      background: #1a1a1a;
+      padding: 10px;
+      overflow-y: auto;
+      border-right: 2px solid #333;
+    }
+
+    #character-select button {
+      display: block;
+      width: 100%;
+      margin: 5px 0;
+      padding: 10px;
+      background: #333;
+      border: none;
+      color: #f4f4f4;
+      cursor: pointer;
+      border-radius: 6px;
+      text-align: left;
+    }
+
+    #character-select button:hover {
+      background: #444;
+    }
+
+    /* Game container and character info side */
+    #content {
+      flex: 1;
+      padding: 20px;
+      overflow-y: auto;
     }
 
     #game-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
-      margin: 20px;
+      margin: 20px 0;
     }
 
     .game-card {
@@ -42,11 +80,6 @@
     .game-card img {
       max-width: 100%;
       border-radius: 6px;
-    }
-
-    .game-card p {
-      margin-top: 10px;
-      color: #f4f4f4;
     }
 
     select {
@@ -71,30 +104,37 @@
   </header>
 
   <main>
-    <div id="game-container">
-      <!-- 2D Fighter -->
-      <div class="game-card" data-genre="2d" onclick="selectGame('ssf2t')">
-        <img src="assets/images/ssf2t.png" alt="SSF2T Logo">
-        <img src="assets/games/ssf2t.png" alt="SSF2T Logo">
+    <!-- Sidebar (characters will be injected here) -->
+    <aside id="character-select">
+      <!-- JS injects character buttons -->
+    </aside>
+
+    <!-- Content area -->
+    <section id="content">
+      <!-- Game selection -->
+      <div id="game-container">
+        <!-- 2D Fighter -->
+        <div class="game-card" data-genre="2d" onclick="selectGame('ssf2t')">
+          <img src="assets/images/ssf2t.png" alt="SSF2T Logo">
+        </div>
+        <div class="game-card" data-genre="2d" onclick="selectGame('sf3')">
+          <img src="assets/images/sf3.png" alt="SFIII Logo">
+        </div>
+
+        <!-- 3D Fighter -->
+        <div class="game-card" data-genre="3d" onclick="selectGame('tekken7')">
+          <img src="assets/images/tekken7.png" alt="Tekken 7 Logo">
+        </div>
+
+        <!-- Anime Fighter -->
+        <div class="game-card" data-genre="anime" onclick="selectGame('ggst')">
+          <img src="assets/images/ggst.png" alt="Guilty Gear Strive Logo">
+        </div>
       </div>
 
-      <div class="game-card" data-genre="2d" onclick="selectGame('sf3')">
-        <img src="assets/images/sf3.png" alt="SFIII Logo">
-        <img src="assets/games/sf3.png" alt="SFIII Logo">
-      </div>
-
-      <!-- 3D Fighter -->
-      <div class="game-card" data-genre="3d" onclick="selectGame('tekken7')">
-        <img src="assets/images/tekken7.png" alt="Tekken 7 Logo">
-        <img src="assets/games/tekken7.png" alt="Tekken 7 Logo">
-      </div>
-
-      <!-- Anime Fighter -->
-      <div class="game-card" data-genre="anime" onclick="selectGame('ggst')">
-        <img src="assets/images/ggst.png" alt="Guilty Gear Strive Logo">
-        <img src="assets/games/ggst.png" alt="Guilty Gear Strive Logo">
-      </div>
-    </div>
+      <!-- Character info (portrait + moves go here) -->
+      <div id="character-info"></div>
+    </section>
   </main>
 
   <script src="js/main.js"></script>
