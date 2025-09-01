@@ -1,12 +1,12 @@
-let gameId = null; // holds the currently selected game
+// Get gameId from the URL query
+const urlParams = new URLSearchParams(window.location.search);
+const gameId = urlParams.get('game');
 
-// Called when user picks a game
-function selectGame(id) {
-  gameId = id;
-  loadCharacterList();
-  document.getElementById("character-data").innerHTML =
-    "<p>Select a character to view their moves.</p>";
-}
+// Set the game title dynamically
+document.getElementById("game-title").innerText = gameId ? gameId.toUpperCase() : "Unknown Game";
+
+// Load character list automatically
+if (gameId) loadCharacterList();
 
 // Load the list of characters for the current game
 async function loadCharacterList() {
