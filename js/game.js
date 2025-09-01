@@ -1,38 +1,46 @@
-// Get gameId from the URL query
+// ---------------------
+// game.js
+// ---------------------
+
+// 1️⃣ Get gameId from URL
 const urlParams = new URLSearchParams(window.location.search);
 const gameId = urlParams.get('game');
 
-// Set the game title dynamically
+// 2️⃣ Set the game title dynamically
 document.getElementById("game-title").innerText = gameId ? gameId.toUpperCase() : "Unknown Game";
 
-// Load character list automatically
+// 3️⃣ Load character list automatically
 if (gameId) loadCharacterList();
 
+// ---------------------
 // Load the list of characters for the current game
+// ---------------------
 async function loadCharacterList() {
   const container = document.getElementById("character-select");
   container.innerHTML = "";
 
   try {
-    // Fetch characters.json for the selected game
     const response = await fetch(`data/${gameId}/characters.json`);
     const characters = await response.json();
 
     characters.forEach(char => {
       const btn = document.createElement("button");
-      btn.innerText = char.name; // display name
-      btn.onclick = () => loadCharacter(char.id); // id = JSON filename
+      btn.innerText = char.name;
+      btn.onclick = () => loadCharacter(char.id);
       container.appendChild(btn);
     });
+
   } catch (err) {
     console.error("Failed to load character list:", err);
     container.innerHTML = "<p>No characters found for this game.</p>";
   }
 }
 
+// ---------------------
 // Load data for a specific character
+// ---------------------
 async function loadCharacter(characterId) {
-  const container = document.getElementById("character-data");
+  const container = document.getElementById("character-info");
   container.innerHTML = "<p>Loading...</p>";
 
   try {
@@ -41,15 +49,26 @@ async function loadCharacter(characterId) {
 
     let html = `
       <h2>${charData.name}</h2>
-      <img src="${charData.portrait}" alt="${charData.name}" class="character-portrait">
+      <img src="assets/ssf2t/${charData.portrait}" alt="${charData.name}" class="character-portrait">
     `;
 
-    // Group moves by type (Command Normals, Input Moves, Supers)
+    // Back button
+    html += `<button id="back-btn">← Back to Games</button>`;
+
+    // Event listener for back button
+    setTimeout(() => {
+      const backBtn = document.getElementById("back-btn");
+      if (backBtn) {
+        backBtn.onclick = () => {
+          window.location.href = "index.html";
+        };
+      }
+    }, 0);
+
+    // Group moves by type
     const groupedMoves = {};
     charData.moves.forEach(move => {
-      if (!groupedMoves[move.type]) {
-        groupedMoves[move.type] = [];
-      }
+      if (!groupedMoves[move.type]) groupedMoves[move.type] = [];
       groupedMoves[move.type].push(move);
     });
 
@@ -59,24 +78,20 @@ async function loadCharacter(characterId) {
       groupedMoves[type].forEach(move => {
         let inputHTML = "";
 
-        // Check if move.input is multiple alternatives or single sequence
+        // Check for multiple alternatives
         if (Array.isArray(move.input[0])) {
-          // Multiple alternatives
+          // Multiple options (e.g., forward+mp OR back+mp)
           inputHTML = move.input
             .map(option =>
               option
-                .map(icon =>
-                  `<span class="input-icon"><img src="assets/icons/${icon}.png" alt="${icon}"></span>`
-                )
+                .map(icon => `<span class="input-icon"><img src="assets/icons/${icon}.png" alt="${icon}"></span>`)
                 .join("")
             )
             .join(' <span class="or-text">or</span> ');
         } else {
           // Single input sequence
           inputHTML = move.input
-            .map(icon =>
-              `<span class="input-icon"><img src="assets/icons/${icon}.png" alt="${icon}"></span>`
-            )
+            .map(icon => `<span class="input-icon"><img src="assets/icons/${icon}.png" alt="${icon}"></span>`)
             .join("");
         }
 
