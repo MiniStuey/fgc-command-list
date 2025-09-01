@@ -15,10 +15,10 @@
   <main id="main-layout">
     <!-- Sidebar for characters -->
     <aside id="character-select">
-      <!-- Character buttons will be injected here by game.js -->
+      <!-- Character buttons get injected by game.js -->
     </aside>
 
-    <!-- Main content -->
+    <!-- Main content area -->
     <section id="content">
       <!-- Genre dropdown -->
       <div id="genre-select">
@@ -34,16 +34,15 @@
       <div id="game-container">
         <h2>Select a Game</h2>
 
-        <!-- 2D Fighters -->
+        <!-- Example 2D Fighters -->
         <div class="game-card" data-genre="2d" onclick="selectGame('ssf2t')">
           <img src="assets/games/ssf2t.png" alt="Super Street Fighter II Turbo">
         </div>
-
         <div class="game-card" data-genre="2d" onclick="selectGame('sf3')">
           <img src="assets/games/sf3.png" alt="Street Fighter III">
         </div>
 
-        <!-- 3D Fighters -->
+        <!-- Example 3D Fighters -->
         <div class="game-card" data-genre="3d" onclick="selectGame('tekken7')">
           <img src="assets/games/tekken7.png" alt="Tekken 7">
         </div>
@@ -51,7 +50,7 @@
 
       <!-- Character details -->
       <div id="character-info">
-        <!-- Portrait + moves will appear here -->
+        <!-- Portrait + moves get injected here -->
       </div>
     </section>
   </main>
