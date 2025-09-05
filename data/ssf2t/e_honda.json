@@ -1,6 +1,6 @@
 {
   "name": "E. Honda",
-  "portrait": "assets/ssf2t/e_honda.png",
+  "portrait": "e_honda.png",
   "moves": [
     {
       "name": "Knee Strike",
