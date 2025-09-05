@@ -1,0 +1,54 @@
+{
+  "name" = "Blanka"
+  "portrait": "assets/ssf2t/blanka.png",
+  "moves": [
+    {
+      "name": "Rock Crusher",
+      "input": [
+        ["fwd", "mp"],
+        ["back", "mp"]
+      ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Amazon River Run",
+      "input": ["df", "hp"],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Electric Thunder",
+      "input": ["mash", "p"],
+      "type": "Input moves"
+    },
+    {
+      "name": "Rolling Attack",
+      "input": ["bc", "fwd", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Vertical Roll",
+      "input": ["dc", "up", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Backstep Roll",
+      "input": ["bc", "fwd", "k"],
+      "type": "Input moves"
+    },
+    {
+      "name": "Surprise Forward",
+      "input": ["fwd", "a3k"],
+      "type": "Input moves"
+    },
+    {
+      "name": "Surprise Back",
+      "input": ["back", "a3k"],
+      "type": "Input moves"
+    },
+    {
+      "name": "Ground Shave Roll",
+      "input": ["bc", "fwd", "bf", "p"],
+      "type": "Super"
+    }
+      
+      
