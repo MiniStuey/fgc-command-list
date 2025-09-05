@@ -1,6 +1,6 @@
 {
   "name": "Ryu",
-  "portrait": "assets/ssf2t/ryu.png",
+  "portrait": "ryu.png",
   "moves": [
     {
       "name": "Solar Plexus Strike",
