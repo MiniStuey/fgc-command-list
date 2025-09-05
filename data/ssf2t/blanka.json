@@ -1,6 +1,6 @@
 {
   "name" = "Blanka"
-  "portrait": "assets/ssf2t/blanka.png",
+  "portrait": "blanka.png",
   "moves": [
     {
       "name": "Rock Crusher",
