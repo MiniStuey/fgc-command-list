@@ -25,7 +25,7 @@
     },
     {
       "name": "Hundred Hand Slap",
-      "input": ["Mash", "p"],
+      "input": ["mash", "p"],
       "type": "Input Moves"
     },
     {
