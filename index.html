@@ -95,7 +95,7 @@
   <header>
     <h1>Fighting Game Reference</h1>
     <label for="genre-select">Choose a genre:</label>
-    <select id="genre-select" onchange="filterGames(this.value)">
+    <select id="genre-select">
       <option value="all">All</option>
       <option value="2d">2D Fighters</option>
       <option value="3d">3D Fighters</option>
@@ -104,51 +104,38 @@
   </header>
 
   <main>
-    <!-- Sidebar (characters will be injected here) -->
-    <aside id="character-select">
-      <!-- JS injects character buttons -->
-    </aside>
+    <!-- Sidebar (characters will be injected in game.html, unused here) -->
+    <aside id="character-select"></aside>
 
     <!-- Content area -->
     <section id="content">
       <!-- Game selection -->
       <div id="game-container">
         <!-- 2D Fighter -->
-        <div class="game-card" data-genre="2d" onclick="selectGame('ssf2t')">
+        <div class="game-card" data-genre="2d" data-game="ssf2t">
           <img src="assets/games/ssf2t.png" alt="SSF2T Logo">
         </div>
-        <div class="game-card" data-genre="2d" onclick="selectGame('sf3')">
+        <div class="game-card" data-genre="2d" data-game="sf3">
           <img src="assets/games/sf3.png" alt="SFIII Logo">
         </div>
 
         <!-- 3D Fighter -->
-        <div class="game-card" data-genre="3d" onclick="selectGame('tekken7')">
+        <div class="game-card" data-genre="3d" data-game="tekken7">
           <img src="assets/games/tekken7.png" alt="Tekken 7 Logo">
         </div>
 
         <!-- Anime Fighter -->
-        <div class="game-card" data-genre="anime" onclick="selectGame('ggst')">
+        <div class="game-card" data-genre="anime" data-game="ggst">
           <img src="assets/games/ggst.png" alt="Guilty Gear Strive Logo">
         </div>
       </div>
 
-      <!-- Character info (portrait + moves go here) -->
+      <!-- Character info is not used here, only in game.html -->
       <div id="character-info"></div>
     </section>
   </main>
 
+  <!-- External script handles all JS -->
   <script src="js/main.js"></script>
-  <script>
-    function filterGames(genre) {
-      const cards = document.querySelectorAll('.game-card');
-      cards.forEach(card => {
-        if (genre === 'all' || card.dataset.genre === genre) {
-          card.style.display = 'block';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    }
-  </script>
 </body>
 </html>
