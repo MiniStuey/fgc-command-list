@@ -45,7 +45,7 @@
     },
     {
       "name": "Super Killer Head Ram",
-      "input": ["bc", "f", "bf", "p"],
+      "input": ["bc", "fwd", "bf", "p"],
       "type": "Super"
     }
   ]
