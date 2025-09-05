@@ -1,30 +1,35 @@
-// ---------------------
-// main.js
-// Handles game selection & filtering
-// ---------------------
-
 document.addEventListener("DOMContentLoaded", () => {
+  console.log("✅ main.js loaded");
+
   const genreSelect = document.getElementById("genre-select");
   const gameCards = document.querySelectorAll(".game-card");
 
-  // 🎮 Game card click → redirect to game.html
+  console.log("🎮 Found cards:", gameCards.length);
+
+  // Game card click → redirect
   gameCards.forEach(card => {
     card.addEventListener("click", () => {
       const gameId = card.dataset.game;
+      console.log("👉 Clicked game:", gameId);
       if (gameId) {
         window.location.href = `game.html?game=${gameId}`;
       }
     });
   });
 
-  // 🎭 Filter by genre
-  genreSelect.addEventListener("change", e => {
-    const genre = e.target.value;
-    gameCards.forEach(card => {
-      card.style.display =
-        genre === "all" || card.dataset.genre === genre
-          ? "block"
-          : "none";
+  // Genre filter
+  if (genreSelect) {
+    genreSelect.addEventListener("change", e => {
+      const genre = e.target.value;
+      console.log("🎭 Filtering by genre:", genre);
+      gameCards.forEach(card => {
+        card.style.display =
+          genre === "all" || card.dataset.genre === genre
+            ? "block"
+            : "none";
+      });
     });
-  });
+  } else {
+    console.warn("⚠️ Genre select not found!");
+  }
 });
