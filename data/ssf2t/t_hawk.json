@@ -1,0 +1,50 @@
+{
+  "name": "T. Hawk",
+  "portrait": "t_hawk.png",
+  "moves": [
+    {
+      "name": "Downward Jab",
+      "input": [
+        ["fwd", "lp"],
+        ["back", "lp"]
+      ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Elbow Drop",
+      "input": [
+        ["air", "df", "mp"],
+        ["air, "bf", "mp"]
+      ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Body Slam",
+      "input": [
+        ["air", "df", "hp"],
+        ["air, "bf", "hp"]
+      ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Mexican Typhoon",
+      "input": ["360", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Tomahawk Buster",
+      "input": ["dp", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Condor Dive",
+      "input": ["air", "a3p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Double Typhoon",
+      "input": ["360", "360", "p"],
+      "type": "Super"
+    }
+  ]
+}
