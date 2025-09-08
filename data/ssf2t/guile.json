@@ -1,0 +1,53 @@
+{
+  "name": "Guile",
+  "portrait": "guile.png",
+  "moves": [
+    {
+      "name": "Spinning Back Knuckle",
+      "input": [
+        ["fwd", "hp"],
+        ["uf", "hp"]
+      ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Knee Bazooka",
+      "input": [
+        ["fwd", "lk"],
+        ["back", "lk"]
+      ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Rolling Sobat",
+      "input": [
+        ["fwd", "mk"],
+        ["back", "mk"]
+      ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Reverse Spin Kick",
+      "input": [
+        ["fwd", "hk"],
+        ["back", "hk"]
+      ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Sonic Boom",
+      "input": ["bc", "fwd", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Somersault Kick",
+      "input": ["dc", "up", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Double Somersault Kick",
+      "input": ["dbc", "tri", "k"],
+      "type": "Super"
+    }
+  ]
+}
