@@ -1,5 +1,5 @@
 {
-  "name" = "Blanka"
+  "name": "Blanka",
   "portrait": "blanka.png",
   "moves": [
     {
