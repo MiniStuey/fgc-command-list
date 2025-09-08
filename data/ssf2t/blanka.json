@@ -18,7 +18,7 @@
     {
       "name": "Electric Thunder",
       "input": ["mash", "p"],
-      "type": "Input moves"
+      "type": "Input Moves"
     },
     {
       "name": "Rolling Attack",
@@ -33,17 +33,17 @@
     {
       "name": "Backstep Roll",
       "input": ["bc", "fwd", "k"],
-      "type": "Input moves"
+      "type": "Input Moves"
     },
     {
       "name": "Surprise Forward",
       "input": ["fwd", "a3k"],
-      "type": "Input moves"
+      "type": "Input Moves"
     },
     {
       "name": "Surprise Back",
       "input": ["back", "a3k"],
-      "type": "Input moves"
+      "type": "Input Moves"
     },
     {
       "name": "Ground Shave Roll",
