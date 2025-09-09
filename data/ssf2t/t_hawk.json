@@ -14,7 +14,7 @@
       "name": "Elbow Drop",
       "input": [
         ["air", "df", "mp"],
-        ["air, "bf", "mp"]
+        ["air", "bf", "mp"]
       ],
       "type": "Command Normals"
     },
@@ -22,7 +22,7 @@
       "name": "Body Slam",
       "input": [
         ["air", "df", "hp"],
-        ["air, "bf", "hp"]
+        ["air", "bf", "hp"]
       ],
       "type": "Command Normals"
     },
