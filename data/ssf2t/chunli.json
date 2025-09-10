@@ -1,0 +1,56 @@
+{
+  "name": "Chun-Li",
+  "portrait": "chunli.png",
+  "moves": [
+    {
+      "name": "Sankaku Tobi (Wall Jump)",
+      "input": ["air", "fwd"],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Rear Spin Kick",
+      "input": ["df", "mk"],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Neck Breaker",
+      "input": ["df", "hk"],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Yosokyaku",
+      "input": ["air", "down", "mk"],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Kikoken",
+      "input": ["bc", "fwd", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Hyakuretsukyaku",
+      "input": ["mash", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Tenshokyaku",
+      "input": ["dc", "up", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Spinning Bird Kick",
+      "input": ["bc", "fwd", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Aerial Spinning Bird Kick",
+      "input": ["air", "bc", "fwd", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Senretsukyaku",
+      "input": ["bc", "fwd", "bf", "k"],
+      "type": "Super"
+    }
+  ]
+}
