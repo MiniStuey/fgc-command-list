@@ -41,7 +41,7 @@
       "name": "Inazuma Kick",
       "input": [
         ["qcf", "hldp", "k"],
-        ["rqcf", "hdlp", "k"],
+        ["rqcf", "hldp", "k"],
         ["hcf", "hldp", "k"]
         ],
       "type": "Input Moves"
