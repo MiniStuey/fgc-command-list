@@ -1,0 +1,39 @@
+{
+  "name": "Fei Long",
+  "portrait": "fei_long.png",
+  "moves": [
+    {
+      "name": "Chokka Raku Shou",
+      "input": [
+        ["fwd", "mk"],
+        ["back", "mk"]
+      ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "En Geki Shuu",
+      "input": ["fwd", "hk"],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Rekka Ken",
+      "input": ["qcf", "p", "qcf", "p", "qcf", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Shien Kyaku",
+      "input": ["bdp", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Rekku Kyaku",
+      "input": ["back", "down", "df", "uf", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Rekka Shinken",
+      "input": ["qcf", "qcf", "p"],
+      "type": "Super"
+    }
+  ]
+}   
