@@ -1,0 +1,34 @@
+{
+  "name": "Sagat",
+  "portrait": "sagat.png",
+  "moves": [
+    {
+      "name": "Tiger Shot (High Tiger)",
+      "input": ["qcf", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Ground Tiger Shot (Low Tiger)",
+      "input": ["qcf", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Tiger Uppercut",
+      "input": ["dp", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Tiger Knee",
+      "input": ["tk", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Tiger Genocide",
+      "input": [
+      ["qcf", "qcf" "p"],
+      ["qcf", "qcf" "k"]
+      ],
+      "type": "Super"
+    }
+  ]
+}   
