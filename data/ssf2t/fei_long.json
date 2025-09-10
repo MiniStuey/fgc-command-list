@@ -27,7 +27,7 @@
     },
     {
       "name": "Rekku Kyaku",
-      "input": ["back", "down", "df", "uf", "k"],
+      "input": ["tk", "k"],
       "type": "Input Moves"
     },
     {
