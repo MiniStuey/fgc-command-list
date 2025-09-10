@@ -1,0 +1,55 @@
+{
+  "name": "Ken",
+  "portrait": "ken.png",
+  "moves": [
+    {
+      "name": "Hadoken",
+      "input": ["qcf", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Shoryuken",
+      "input": ["dp", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Tatsumaki Senpukyaku",
+      "input": ["qcb", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Kuuchuu Tatsumaki Senpukyaku",
+      "input": ["air", "qcb", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Kama Barai Geri",
+      "input": ["qcf", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Nata Otoshi Geri",
+      "input": ["rqcf", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Oosoto Mawashi Geri",
+      "input": ["hcf", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Inazuma Kick",
+      "input": [
+        ["qcf", "hldp", "k"],
+        ["rqcf", "hdlp", "k"],
+        ["hcf", "hldp", "k"]
+        ],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Crazy Buffalo",
+      "input": ["qcf", "qcf", "p"],
+      "type": "Super"
+    }
+  ]
+}   
