@@ -47,7 +47,7 @@
       "type": "Input Moves"
     },
     {
-      "name": "Crazy Buffalo",
+      "name": "Shoryureppa",
       "input": ["qcf", "qcf", "p"],
       "type": "Super"
     }
