@@ -1,0 +1,47 @@
+{
+  "name": "Balrog",
+  "portrait": "balrog.png",
+  "moves": [
+    {
+      "name": "Straight Rush",
+      "input": ["bc", "fwd", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Upper Rush",
+      "input": ["bc", "fwd", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Ground Straight Rush (Low Rush)",
+      "input": ["bc", "df", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Ground Upper Rush (Knockdown Rush)",
+      "input": ["bc", "df", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Turn Around Punch",
+      "input": [
+        ["hldp", "a3p"],
+        ["hldp", "a3k"]
+      ],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Buffalo Headbutt",
+      "input": ["dc", "up", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Crazy Buffalo",
+      "input": [
+      ["bc", "fwd", "bf", "p"],
+      ["bc", "fwd", "bf", "k"]
+      ],
+      "type": "Super"
+    }
+  ]
+}   
