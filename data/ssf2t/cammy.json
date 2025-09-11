@@ -1,0 +1,36 @@
+{
+  "name": "Cammy",
+  "portrait": "cammy.png",
+  "moves": [
+    {
+      "name": "Spiral Arrow",
+      "input": ["qcf", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Cannon Spike",
+      "input": ["dp", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Axle Spin Knuckle",
+      "input": ["hcf", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Hooligan Combination: Razor Edge Slicer",
+      "input": ["tk", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Hooligan Combination: Fatal Leg Twister",
+      "input": ["tk", "p", "fwd", "k"],
+      "type": "Input Moves"
+    },
+   {
+      "name": "Spin Drive Smasher",
+      "input": ["hcf", "hcf", "k"],
+      "type": "Input Moves"
+    }
+  ]
+}   
