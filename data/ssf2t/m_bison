@@ -1,0 +1,36 @@
+{
+  "name": "M. Bison",
+  "portrait": "m_bison.png",
+  "moves": [
+    {
+      "name": "Psycho Crusher",
+      "input": ["bc", "fwd", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Double Knee Press",
+      "input": ["bc", "fwd", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Head Press",
+      "input": ["dc", "up", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Somersault Skull Diver",
+      "input": ["dc", "up", "k", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Devil Reverse",
+      "input": ["dc", "up", "p", "p"],
+      "type": "Input"
+      },
+    {
+      "name": "Knee Press Nightmare",
+      "input": ["bc", "fwd", "bf", "k"],
+      "type": "Super"
+    }
+  ]
+}   
