@@ -1,0 +1,60 @@
+{
+  "name": "Zangief",
+  "portrait": "zangief.png",
+  "moves": [
+    {
+      "name": "Headbutt",
+      "input": [
+        ["air", "uf", "hp"],
+        ["air", "ub", "hp"]
+      ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Flying Body Attack",
+      "input": [
+        ["air", "df", "hp"],
+        ["air", "db", "hp"]
+      ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Flying Body Attack",
+      "input": [
+        ["air", "df", "mk"],
+        ["air", "db", "mk"]
+      ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Spinning Pile Driver",
+      "input": ["360", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Atomic Suplex/Running Bear Grab",
+      "input": ["360", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Double Lariat",
+      "input": ["a3p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Quick Double Lariat",
+      "input": ["a3k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Banishing Fist (Green Hand)",
+      "input": ["dp", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Final Atomic Buster",
+      "input": ["360", "360", "p"],
+      "type": "Super"
+    }
+  ]
+}   
