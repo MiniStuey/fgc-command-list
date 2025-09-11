@@ -30,7 +30,7 @@
    {
       "name": "Spin Drive Smasher",
       "input": ["hcf", "hcf", "k"],
-      "type": "Input Moves"
+      "type": "Super"
     }
   ]
 }   
