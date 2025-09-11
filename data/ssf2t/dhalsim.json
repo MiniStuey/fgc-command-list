@@ -1,0 +1,52 @@
+{
+  "name": "Dhalsim",
+  "portrait": "dhalsim.png",
+  "moves": [
+    {
+      "name": "Drill Headbutt",
+      "input": ["air", "down", "hp"],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Drill Kick",
+      "input": ["air", "down", "k"],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Yoga Fire",
+      "input": ["qcf", "p"],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Yoga Flame",
+      "input": ["hcf", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Yoga Blast",
+      "input": ["hcf", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Yoga Teleport Forward",
+      "input": [
+        ["dp", "a3p"],
+        ["dp", "a3k"]
+      ],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Yoga Teleport Backward",
+      "input": [
+        ["rdp", "a3p"],
+        ["rdp", "a3k"]
+      ],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Yoga Inferno",
+      "input": ["hcf", "hcf", "p"],
+      "type": "Super"
+    }
+  ]
+}
