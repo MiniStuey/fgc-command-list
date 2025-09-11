@@ -1,0 +1,36 @@
+{
+  "name": "Dee Jay",
+  "portrait": "dee_jay.png",
+  "moves": [
+    {
+      "name": "Knee Shot",
+      "input": ["air", "down, "lk"],
+      "type": "Command Normal"
+    },
+    {
+      "name": "Air Slasher",
+      "input": ["bc", "fwd", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Double Rolling Sobat",
+      "input": ["bc", "fwd", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Machine Gun Upper",
+      "input": ["dc", "up", "mash", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Machine Gun Upper",
+      "input": ["dc", "up", "k"],
+      "type": "Input Moves"
+    },
+   {
+      "name": "Sobat Carnival",
+      "input": ["bc", "fwd", "bf", "k"],
+      "type": "Super"
+    }
+  ]
+}   
