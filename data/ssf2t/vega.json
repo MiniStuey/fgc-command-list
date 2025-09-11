@@ -1,0 +1,54 @@
+{
+  "name": "Vega",
+  "portrait": "vega.png",
+  "moves": [
+    {
+      "name": "Sankaku Tobi",
+      "input": ["air", "fwd"],
+      "type": "Command Normal"
+    },
+    {
+      "name": "Back Slash",
+      "input": ["a3p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Short Back Slash",
+      "input": ["a3k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Rolling Crystal Flash",
+      "input": ["bc", "fwd", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Flying Barcelona Attack",
+      "input": ["dc", "up", "k", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Flying Barcelona Attack",
+      "input": [
+        ["dc", "up", "k", "fwd", "p"],
+        ["dc", "up", "k", "back", "p"]
+      ],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Sky High Claw",
+      "input": ["dc", "up", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Scarlet Terror",
+      "input": ["dbc", "fwd", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Crazy Buffalo",
+      "input": ["dbc", "tri", "k", "p"],
+      "type": "Super"
+    }
+  ]
+}   
