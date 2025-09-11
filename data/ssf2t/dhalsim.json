@@ -38,8 +38,8 @@
     {
       "name": "Yoga Teleport Backward",
       "input": [
-        ["rdp", "a3p"],
-        ["rdp", "a3k"]
+        ["bdp", "a3p"],
+        ["bdp", "a3k"]
       ],
       "type": "Input Moves"
     },
