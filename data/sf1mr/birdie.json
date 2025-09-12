@@ -1,0 +1,31 @@
+{
+  "name": "Birdie",
+  "portrait": "birdie.png",
+  "moves": [
+    {
+      "name": "Overhead Punch",
+      "input": ["qcf", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Headbutt",
+      "input": ["dc", "up", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Jump Hammer",
+      "input": ["dc", "up", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Super Headbutt",
+      "input": ["qcf", "qcf", "p"],
+      "type": "Super Moves"
+    },
+    {
+      "name": "Birdie Special",
+      "input": ["qcf", "qcf", "k"],
+      "type": "Super Moves"
+    }
+  ]
+}   
