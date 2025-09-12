@@ -1,0 +1,31 @@
+{
+  "name": "Eagle",
+  "portrait": "eagle.png",
+  "moves": [
+    {
+      "name": "Stick Frenzy",
+      "input": ["qcf", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Spinning Sticks",
+      "input": ["qcb", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Eagle Counter",
+      "input": ["qcf", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Super Frenzy",
+      "input": ["qcf", "qcf", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Super Spin",
+      "input": ["qcb", "qcb", "p"],
+      "type": "Super Moves"
+    }
+  ]
+}
