@@ -1,1 +1,31 @@
-placeholder
+{
+  "name": "Ryu",
+  "portrait": "ryu.png",
+  "moves": [
+    {
+      "name": "Hadoken",
+      "input": ["qcf", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Tatsumaki Sepnukyaku",
+      "input": ["qcb", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Shoryuken",
+      "input": ["dp", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Shinku Hadoken",
+      "input": ["qcf", "qcf", "p"],
+      "type": "Sw Moves"
+    },
+    {
+      "name": "Shinku Tatsumai",
+      "input": ["qcf", "qcf", "p"],
+      "type": "Super Moves"
+    }
+  ]
+}   
