@@ -1,0 +1,31 @@
+{
+  "name": "Adon",
+  "portrait": "adon.png",
+  "moves": [
+    {
+      "name": "Fast Punch",
+      "input": ["qcf", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Roundhouse Flurry",
+      "input": ["qcf", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Jaguar Kick",
+      "input": ["qcb", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Suger Jaguar",
+      "input": ["qcf", "qcf", "p"],
+      "type": "Super Moves"
+    },
+    {
+      "name": "Jaguar Revolver",
+      "input": ["qcf", "qcf", "k"],
+      "type": "Super Moves"
+    }
+  ]
+}   
