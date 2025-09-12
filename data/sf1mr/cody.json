@@ -1,0 +1,36 @@
+{
+  "name": "Cody",
+  "portrait": "cody.png",
+  "moves": [
+    {
+      "name": "Final Fight Chain",
+      "input": ["fwd", "lp", "fwd", "lk", "fwd", "hp", "fwd", "hk"],
+      "type": "Command Normal"
+    },
+    {
+      "name": "Hero Upper",
+      "input": ["qcb", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Cody Spin",
+      "input": ["qcb", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Pick Up Knife",
+      "input": ["down", "hp", "hk"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Toss Knife (w/ Knife)",
+      "input": ["qcf", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Final Destruction",
+      "input": ["qcf", "qcf", "p"],
+      "type": "Super Moves"
+    }
+  ]
+}   
