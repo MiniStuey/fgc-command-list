@@ -1,0 +1,31 @@
+{
+  "name": "Retsu",
+  "portrait": "retsu.png",
+  "moves": [
+    {
+      "name": "Hadoken",
+      "input": ["qcf", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Incomplete Spin Kick",
+      "input": ["bdp", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Retsu Reversal",
+      "input": ["qcb", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Hadoken x3",
+      "input": ["qcf", "qcf", "p"],
+      "type": "Sw Moves"
+    },
+    {
+      "name": "Shaolin Special",
+      "input": ["qcf", "qcf", "p"],
+      "type": "Super Moves"
+    }
+  ]
+}   
