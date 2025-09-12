@@ -9,7 +9,7 @@
     },
     {
       "name": "Dragon's Dagger",
-      "input": ["air, "qcf", "k"],
+      "input": ["air", "qcf", "k"],
       "type": "Input Moves"
     },
     {
