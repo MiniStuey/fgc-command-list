@@ -1,0 +1,31 @@
+{
+  "name": "Joe",
+  "portrait": "joe.png",
+  "moves": [
+    {
+      "name": "Forward Heavy Punch",
+      "input": ["fwd", "hp"],
+      "type": "Command Normal"
+    },
+    {
+      "name": "Under Punch",
+      "input": ["qcf", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Biya Kick",
+      "input": ["qcb", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Forward Spin Kick",
+      "input": ["qcf", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Under Punch x3",
+      "input": ["qcf", "qcf", "p"],
+      "type": "Super Move"
+    }
+  ]
+}   
