@@ -1,0 +1,31 @@
+{
+  "name": "Sagat",
+  "portrait": "sagat.png",
+  "moves": [
+    {
+      "name": "High Tiger shot",
+      "input": ["qcf", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Low Tiger Shot",
+      "input": ["qcf", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Tiger Knee",
+      "input": ["qcb", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Tiger Cannon",
+      "input": ["qcf", "qcf", "p"],
+      "type": "Super Moves"
+    },
+    {
+      "name": "Tiger Raid",
+      "input": ["qcb", "qcb", "k"],
+      "type": "Super Moves"
+    }
+  ]
+}   
