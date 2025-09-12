@@ -1,0 +1,15 @@
+[
+  { "id": "ryu", "name": "Ryu" },
+  { "id": "restsu", "name": "Retsu" },
+  { "id": "lee", "name": "Lee" },
+  { "id": "joe", "name": "Joe" },
+  { "id": "birdie", "name": "Birdie"},
+  { "id": "ken", "name": "Ken"},
+  { "id": "geki", "name": "Geki" },
+  { "id": "gen", "name": "Gen" },
+  { "id": "mike", "name": "Mike" },
+  { "id": "eagle", "name": "Eagle" },
+  { "id": "cody", "name": "Cody" },
+  { "id": "adon", "name": "Adon" },
+  { "id": "sagat", "name": "Sagat" }
+]
