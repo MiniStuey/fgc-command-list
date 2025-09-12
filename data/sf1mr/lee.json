@@ -1,0 +1,26 @@
+{
+  "name": "Lee",
+  "portrait": "lee.png",
+  "moves": [
+    {
+      "name": "Leap Punch",
+      "input": ["qcf", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Dragon's Dagger",
+      "input": ["air, "qcf", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Inner Chi Blast",
+      "input": ["qcb", "p"],
+      "type": "Super Moves"
+    },
+    {
+      "name": "Ancient Combo",
+      "input": ["qcf", "qcf", "p"],
+      "type": "Super Moves"
+    }
+  ]
+}   
