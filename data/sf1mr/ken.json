@@ -1,0 +1,31 @@
+{
+  "name": "Ken",
+  "portrait": "ken.png",
+  "moves": [
+    {
+      "name": "Hadoken",
+      "input": ["qcf", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Tatsumaki Sepnukyaku",
+      "input": ["qcb", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Shoryuken",
+      "input": ["dp", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Shoryureppa",
+      "input": ["qcf", "qcf", "p"],
+      "type": "Super Moves"
+    },
+    {
+      "name": "Shinryuken",
+      "input": ["qcf", "qcf", "k"],
+      "type": "Super Moves"
+    }
+  ]
+}   
