@@ -1,0 +1,39 @@
+{
+  "name": "Mike",
+  "portrait": "mike.png",
+  "moves": [
+    {
+      "name": "Deep Knuckle",
+      "input": ["dp", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Sand Toss",
+      "input": ["qcb", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Dodge Forward",
+      "input": ["qcf", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Dodge Backward",
+      "input": ["qcb", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Groin Punch",
+      "input": [
+        ["qcf", "p"],
+        ["qcb", "k"]
+      ],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Champion Combo",
+      "input": ["qcb", "qcb", "k"],
+      "type": "Super Moves"
+    }
+  ]
+}
