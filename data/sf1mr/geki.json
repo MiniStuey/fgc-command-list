@@ -1,0 +1,36 @@
+{
+  "name": "Geki",
+  "portrait": "geki.png",
+  "moves": [
+    {
+      "name": "Shuriken Toss",
+      "input": ["qcf", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Air Shuriken Toss",
+      "input": ["air", "qcf", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Claw Frenzy",
+      "input": ["qcf", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Phoenix vanish",
+      "input": ["dp", "lp", "hp", "lk", "hk"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Super Star",
+      "input": ["qcf", "qcf", "p"],
+      "type": "Super Moves"
+    },
+    {
+      "name": "Air Super Star",
+      "input": ["air", "qcf", "qcf", "p"],
+      "type": "Super Moves"
+    }
+  ]
+}   
