@@ -1,0 +1,116 @@
+{
+  "name": "Akuma",
+  "portrait": "akuma.png",
+  "moves": [
+    {
+      "name": "Zugai Hasatsu",
+      "input": ["fwd", "mp"],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Tenma Kujin Kyaku",
+      "input": ["down", "mk"],
+      "type": "Command Normals"
+},
+    {
+      "name": "Target Combo",
+      "input": ["mp", "hp"],
+      "type": "Command Normals"
+},
+    {
+      "name": "Universal Overhead",
+      "input": ["mp", "mk"],
+      "type": "Command Normals"
+},
+    {
+      "name": "Gou Hadoken",
+      "input": ["qcf", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Zankuu Hadoken",
+      "input": ["air", "qcf", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Shakunetsu Hadoken",
+      "input": ["qcb", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Gou Shoryuken",
+      "input": ["dp", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Tatsumaki Zankuu Kyaku",
+      "input": ["qcb", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Airborne Tatasumaki Zankuu Kyaku",
+      "input": ["air", "qcb", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Hyakki Shuu",
+      "input": ["dp", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Hyakki Goushou",
+      "input": ["dp", "k", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Hyakki Shuu",
+      "input": ["dp", "k", "air", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Hyakki Gousai",
+      "input": ["dp", "k", "lp", "lk"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Ashura Senkuu (long)",
+      "input": ["dp", "p", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Ashura Senkuu (short)",
+      "input": ["dp", "k", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Messatsu Gou Hadou",
+      "input": ["qcf", "qcf", "p"],
+      "type": "Supers"
+    },
+    {
+      "name": "Tenma Gou Zankuu",
+      "input": ["air", "qcf", "qcf", "p"],
+      "type": "Supers"
+    },
+    {
+      "name": "Messatsu Gou Shoryuu",
+      "input": ["qcf", "qcf", "p"],
+      "type": "Supers"
+    },
+    {
+      "name": "Messatsu Gou Rasen",
+      "input": ["qcf", "qcf", "k"],
+      "type": "Supers"
+    },
+    {
+      "name": "Raging Demon",
+      "input": ["lp", "lp", "fwd", "lk", "hp"],
+      "type": "Supers"
+    },
+    {
+      "name": "Kongou Kokuretsu Zan",
+      "input": ["down", "down", "down", "p", "p"],
+      "type": "Supers"
+    }
+  ]
+}
