@@ -59,17 +59,17 @@
     },
     {
       "name": "Hyakki Goushou",
-      "input": ["dp", "k", "p"],
+      "input": ["dp", "k", "into", "p"],
       "type": "Input Moves"
     },
     {
       "name": "Hyakki Shuu",
-      "input": ["dp", "k", "air", "k"],
+      "input": ["dp", "k", "into", "k"],
       "type": "Input Moves"
     },
     {
       "name": "Hyakki Gousai",
-      "input": ["dp", "k", "lp", "lk"],
+      "input": ["dp", "k", "into", "lp", "lk"],
       "type": "Input Moves"
     },
     {
@@ -104,7 +104,7 @@
     },
     {
       "name": "Raging Demon",
-      "input": ["lp", "lp", "fwd", "lk", "hp"],
+      "input": ["lp", "into", "lp", "into", "fwd", "into", "lk", "into", "hp"],
       "type": "Supers"
     },
     {
