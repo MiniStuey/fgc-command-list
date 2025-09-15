@@ -1,0 +1,21 @@
+[
+  { "id": "akuma", "name": "Akuma" },
+  { "id": "alex", "name": "Alex" },
+  { "id": "chunli", "name": "Chun-Li" },
+  { "id": "dudley", "name": "Dudley" },
+  { "id": "elena", "name": "Elena"},
+  { "id": "hugo", "name": "Hugo"},
+  { "id": "ibuki", "name": "Ibuki" },
+  { "id": "ken", "name": "Ken" },
+  { "id": "makoto", "name": "Makoto" },
+  { "id": "necro", "name": "Necro" },
+  { "id": "oro", "name": "Oro" },
+  { "id": "q", "name": "Q" },
+  { "id": "remy", "name": "Remy" },
+  { "id": "ryu", "name": "Ryu" },
+  { "id": "sean", "name": "Sean" },
+  { "id": "twelve", "name": "Twelve" },
+  { "id": "urien", "name": "Urien" },
+  { "id": "yang", "name": "Yang" },
+  { "id": "yun", "name": "Yun" }
+]
