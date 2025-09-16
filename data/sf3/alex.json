@@ -3,7 +3,7 @@
   "portrait": "alex.png",
   "moves": [
     {
-      "name": "Flting Cross Chop",
+      "name": "Flying Cross Chop",
       "input": ["air", "down", "hp"],
       "type": "Command Normals"
     },
