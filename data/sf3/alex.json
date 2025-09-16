@@ -1,0 +1,81 @@
+{
+  "name": "Alex",
+  "portrait": "alex.png",
+  "moves": [
+    {
+      "name": "Flting Cross Chop",
+      "input": ["air", "down", "hp"],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Chop",
+      "input": ["fwd", "mp"],
+      "type": "Command Normals"
+},
+    {
+      "name": "Lariat",
+      "input": ["fwd", "hp"],
+      "type": "Command Normals"
+},
+    {
+      "name": "Headbutt",
+      "input": ["back", "hp"],
+      "type": "Command Normals"
+},
+    {
+      "name": "Hand Stamp",
+      "input": ["mp", "mk"],
+      "type": "Command Normals"
+},
+    {
+      "name": "Target Combo 1",
+      "input": ["down", "lk", "into", "down", "mk"],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Target Combo 2",
+      "input": ["down", "lk", "into", "down", "hk"],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Flash Chop",
+      "input": ["qcf", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Power Bomb",
+      "input": ["hcb", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Spiral D.D.T.",
+      "input": ["qcb", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Air Knee Smash",
+      "input": ["dp", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Air Stampede",
+      "input": ["dc", "up", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Slash Elbow",
+      "input": ["bc", "fwd", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Hyper Bomb",
+      "input": ["360", "p"],
+      "type": "Supers"
+    },
+    {
+      "name": "Boomerang Raid",
+      "input": ["qcf", "qcf", "p"],
+      "type": "Supers"
+    }
+  ]
+}
