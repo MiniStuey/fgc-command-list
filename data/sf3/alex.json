@@ -76,6 +76,11 @@
       "name": "Boomerang Raid",
       "input": ["qcf", "qcf", "p"],
       "type": "Supers"
+    },
+    {
+      "name": "Sun Gun Headbutt",
+      "input": ["qcf", "qcf", "p"],
+      "type": "Supers"
     }
   ]
 }
