@@ -1,0 +1,136 @@
+{
+  "name": "Dudley",
+  "portrait": "dudley.png",
+  "moves": [
+    {
+      "name": "Jumping Elbouw",
+      "input": ["mk", "mp"],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Slipping Jab",
+      "input": ["fwd", "lp"],
+      "type": "Command Normals"
+},
+    {
+      "name": "Stomach Blow",
+      "input": ["fwd", "mp"],
+      "type": "Command Normals"
+},
+    {
+      "name": "Step Straight",
+      "input": ["fwd", "hp"],
+      "type": "Command Normals"
+},
+    {
+      "name": "Liver Blow",
+      "input": ["fwd", "mk"],
+      "type": "Command Normals"
+},
+    {
+      "name": "Dart Shot",
+      "input": ["fwd", "hk"],
+      "type": "Command Normals"
+},
+    {
+      "name": "Target Comob 1",
+      "input": ["lp", "into", "mp", "into", "mk"],
+      "type": "Command Normals"
+},
+    {
+      "name": "Target Combo 2",
+      "input": ["fwd", "lp", "into", "mp"],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Target Combo 3",
+      "input": ["down", "lk", "into", "mk"],
+      "type": "Command Normals"
+},
+    {
+      "name": "Target Combo 4",
+      "input": ["mk", "into", "hk", "hp"],
+      "type": "Command Normals"
+},
+    {
+      "name": "Target Combo 5",
+      "input": ["down", "lp", "into", "down", "mp", "into", "down", "hp"],
+      "type": "Command Normals"
+},
+    {
+      "name": "Target Combo 6",
+      "input": ["fwd", "hk", "into", "mk"],
+      "type": "Command Normals"
+},
+    {
+      "name": "Target Combo 7",
+      "input": ["mp", "into", "mk", "into", "hp"],
+      "type": "Command Normals"
+},
+    {
+      "name": "Target Combo 8",
+      "input": ["lk", "into", "mk", "into", "mp", "into", "hp"],
+      "type": "Command Normals"
+},
+    {
+      "name": "Target Combo 9",
+      "input": ["fwd", "mk", "into", "mk", "into", "hp"],
+      "type": "Command Normals"
+},
+    {
+      "name": "Jet Upper",
+      "input": ["dp", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Machine Gun Blow",
+      "input": ["hcf", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Ducking",
+      "input": ["hcf", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Ducking Straight",
+      "input": ["hcf", "k", "into", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Ducking Upper",
+      "input": ["hcf", "k", "into", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Cross Counter",
+      "input": ["hcb", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Punch & Cross",
+      "input": ["hcb", "p", "into", "fwd", "p"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Short Swing Blow",
+      "input": ["hcb", "k"],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Rocket Upper",
+      "input": ["qcf", "qcf", "p"],
+      "type": "Supers"
+    },
+    {
+      "name": "Rolling Thunder",
+      "input": ["qcf", "qcf", "p", "into", "mash", "p"],
+      "type": "Supers"
+    },
+    {
+      "name": "Corkscrew Blow",
+      "input": ["qcf", "qcf", "p"],
+      "type": "Supers"
+    }
+  ]
+}
