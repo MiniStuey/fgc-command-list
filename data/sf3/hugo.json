@@ -63,7 +63,7 @@
     {
       "name": "Hammer Frenzy",
       "input": [ "qcf", "qcf", "p" ],
-      "type": "Input Moves"
+      "type": "Supers"
     }
   ]
 }
