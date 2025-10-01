@@ -1,0 +1,69 @@
+{
+  "name": "Hugo",
+  "portrait": "hugo.png",
+  "moves": [
+    {
+      "name": "Body Press",
+      "input": [ "air", "down", "hp" ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Drop Kick",
+      "input": [
+        [ "fwd", "hk" ],
+        [ "back", "hk" ]
+      ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Universal Overhead",
+      "input": [ "mp", "mk" ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Giant Palm Breaker",
+      "input": [ "qcb", "p" ],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Monster Lariat",
+      "input": [ "qcf", "k" ],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Ultra Throw",
+      "input": [ "hcb", "k" ],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Moonsault Press",
+      "input": [ "360", "p" ],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Meat Squasher",
+      "input": [ "360", "k" ],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Shootdown Backbreaker",
+      "input": [ "dp", "k" ],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Gigas Breaker",
+      "input": [ "360", "360", "p" ],
+      "type": "Supers"
+    },
+    {
+      "name": "Megaton Press",
+      "input": [ "qcf", "qcf", "k" ],
+      "type": "Supers"
+    },
+    {
+      "name": "Hammer Frenzy",
+      "input": [ "qcf", "qcf", "p" ],
+      "type": "Input Moves"
+    }
+  ]
+}
