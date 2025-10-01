@@ -1,0 +1,92 @@
+{
+  "name": "Elena",
+  "portrait": "elena.png",
+  "moves": [
+    {
+      "name": "Handstand Kick",
+      "input": [ "fwd", "mp" ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Handstand Whip",
+      "input": [ "fwd", "mk" ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Round Arch",
+      "input": [ "back", "hk" ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Sliding",
+      "input": [ "df", "hk" ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Universal Overhead",
+      "input": [ "mp", "mk" ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Target Combo 1",
+      "input": [ "air", "lp", "into", "air", "mk" ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Target Combo 2",
+      "input": [ "air", "mp", "into", "air", "hp" ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Target Combo 3",
+      "input": [ "hp", "into", "hk" ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Target Combo 4",
+      "input": [ "mk", "into", "down", "hk" ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Rhino Horn",
+      "input": [ "hcf", "k" ],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Mallet Smash",
+      "input": [ "hcb", "p" ],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Spin Scythe",
+      "input": [ "qcb", "k" ],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Scratch Wheel",
+      "input": [ "dp", "k" ],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Lynx Tail",
+      "input": [ "bdp", "k" ],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Spinning Beat",
+      "input": [ "qcf", "qcb", "k" ],
+      "type": "Supers"
+    },
+    {
+      "name": "Brave Dance",
+      "input": [ "qcf", "qcf", "k" ],
+      "type": "Supers"
+    },
+    {
+      "name": "Healing",
+      "input": [ "qcf", "qcf", "p" ],
+      "type": "Input Moves"
+    }
+  ]
+}
+    
