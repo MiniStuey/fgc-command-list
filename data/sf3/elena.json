@@ -85,7 +85,7 @@
     {
       "name": "Healing",
       "input": [ "qcf", "qcf", "p" ],
-      "type": "Input Moves"
+      "type": "Supers"
     }
   ]
 }
