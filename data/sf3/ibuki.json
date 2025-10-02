@@ -1,0 +1,124 @@
+{
+  "name": "Ibuki",
+  "portrait": "ibuki.png",
+  "moves": [
+    {
+      "name": "Maki Geri",
+      "input": [ "fwd", "lk" ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Koube Kudaki",
+      "input": [ "fwd", "mk" ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Bonshou Geri",
+      "input": [ "fwd", "hk" ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "You Men",
+      "input": [ "back", "mp" ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Ura Maki Geri",
+      "input": [ "back", "mk" ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Sazan",
+      "input": [ "df", "mk" ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Universal Overhead",
+      "input": [ "mp", "mk" ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Target Combo 1",
+      "input": [ "back", "mp", "into", "hp" ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Target Combo 2",
+      "input": [ "back", "mp", "into", "hk", "into", "hk" ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Target Combo 3",
+      "input": [ "lp", "into", "mp", "into", "hp" ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Target Combo 4",
+      "input": [ "lk", "into", "mk", "into", "hk" ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Target Combo 5",
+      "input": [ "lp", "into", "mp", "into", "down", "hk", "into", "hk" ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Kunai",
+      "input": [ "air", "qcf", "p" ],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Kubi Ori",
+      "input": [ "qcf", "p" ],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Kasumi Gake",
+      "input": [ "qcf", "k" ],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Tsuiji Goe",
+      "input": [ "dp", "p" ],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Kazekiri",
+      "input": [ "dp", "k" ],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Hien",
+      "input": [ "bdp", "k" ],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Raida",
+      "input": [ "hcb", "p" ],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Tsumuji",
+      "input": [
+        [ "qcb", "k", "into", "k" ],
+        [ "qcb", "k", "into", "down", "k" ]
+      ],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Kasumi Suzaku",
+      "input": [ "air", "qcf", "qcf", "p" ],
+      "type": "Supers"
+    },
+    {
+      "name": "Yoroi Dooshi",
+      "input": [ "qcf", "qcf", "p" ],
+      "type": "Supers"
+    },
+    {
+      "name": "Tami Shigure",
+      "input": [ "qcf", "qcf", "p" ],
+      "type": "Input Moves"
+    }
+  ]
+}
