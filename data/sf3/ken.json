@@ -1,0 +1,61 @@
+{
+  "name": "Ken",
+  "portrait": "ken.png",
+  "moves": [
+    {
+      "name": "Inazuma Kakato Wari",
+      "input": [ "back", "mk" ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Fumikomi Mae Geri",
+      "input": [ "fwd", "mk" ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Shiden Kakato Otoshi",
+      "input": [ "fwd", "hk" ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Universal Overhead",
+      "input": [ "mp", "mk" ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Hadoken",
+      "input": [ "qcf", "p" ],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Shoryuken",
+      "input": [ "dp", "p" ],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Tatsumaki Senpukyaku",
+      "input": [ "qcb", "k" ],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Kuuchu Tatsumaki Senpukyaku",
+      "input": [ "air", "qcb", "p" ],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Shoryu Reppa",
+      "input": [ "qcf", "qcf", "p" ],
+      "type": "Supers"
+    },
+    {
+      "name": "Shinryuken",
+      "input": [ "qcf", "qcf", "k", "into", "mash", "k" ],
+      "type": "Supers"
+    },
+    {
+      "name": "Shipujinrai Kyaku",
+      "input": [ "qcf", "qcf", "k" ],
+      "type": "Supers"
+    }
+  ]
+}
