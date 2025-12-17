@@ -1,91 +1,149 @@
 {
-  "name": "Makoto",
-  "portrait": "makoto.png",
-  "moves": [
-    {
-      "name": "Kote Tsuki",
-      "input": [ "fwd", "lp" ],
-      "type": "Command Normals"
-    },
-    {
-      "name": "Gezuki",
-      "input": [ "fwd", "mp" ],
-      "type": "Command Normals"
-    },
-    {
-      "name": "Fumikomi Seiken-zuki",
-      "input": [ "fwd", "hp" ],
-      "type": "Command Normals"
-    },
-    {
-      "name": "Mae Geri",
-      "input": [ "fwd", "lk" ],
-      "type": "Command Normals"
-    },
-    {
-      "name": "Fumikomi Joudan Mawashi Geri",
-      "input": [ "fwd", "mk" ],
-      "type": "Command Normals"
-    },
-    {
-      "name": "Fumikomi Soku Barai",
-      "input": [ "fwd", "hp" ],
-      "type": "Command Normals"
-    },
-    {
-      "name": "Universal Overhead",
-      "input": [ "mp", "mk" ],
-      "type": "Command Normals"
-    },
-    {
-      "name": "Target Combo 1",
-      "input": [ "fwd", "mk", "into", "hk ],
-      "type": "Target Combos"
-    },
-    {
-      "name": "Target Combo 2",
-      "input": [ "lk", "into", "mk" ],
-      "type": "Target Combos"
-    },
-    {
-      "name": "Tosshin Seiken-zuki",
-      "input": [ "qcf", "p" ],
-      "type": "Input Moves"
-    },
-    {
-      "name": "Chokujou Seiken-zuki",
-      "input": [ "dp", "p" ],
-      "type": "Input Moves"
-    },
-    {
-      "name": "Uchi Oroshi Shutou",
-      "input": [ "qcb", "p" ],
-      "type": "Input Moves"
-    },
-    {
-      "name": "Tsurushi Nodowa",
-      "input": [ "hcb", "k" ],
-      "type": "Input Moves"
-    },
-    {
-      "name": "Senjou Katao Otoshi",
-      "input": [ "air", "qcb", "k" ],
-      "type": "Input Moves"
-    },
-    {
-      "name": "Seichuusen Godan-zuki",
-      "input": [ "qcf", "qcf", "p" ],
-      "type": "Supers"
-    },
-    {
-      "name": "Abare Tosanami Kudaki",
-      "input": [ "qcf", "qcf", "k"],
-      "type": "Supers"
-    },
-    {
-      "name": "Tanden Renki: Seme no Kata",
-      "input": [ "qcf", "qcf", "k" ],
-      "type": "Supers"
-    }
-  ]
+    "name": "Makoto",
+    "portrait": "makoto.png",
+    "moves": [
+        {
+            "name": "Kote Tsuki",
+            "input": [
+                "fwd",
+                "lp"
+            ],
+            "type": "Command Normals"
+        },
+        {
+            "name": "Gezuki",
+            "input": [
+                "fwd",
+                "mp"
+            ],
+            "type": "Command Normals"
+        },
+        {
+            "name": "Fumikomi Seiken-zuki",
+            "input": [
+                "fwd",
+                "hp"
+            ],
+            "type": "Command Normals"
+        },
+        {
+            "name": "Mae Geri",
+            "input": [
+                "fwd",
+                "lk"
+            ],
+            "type": "Command Normals"
+        },
+        {
+            "name": "Fumikomi Joudan Mawashi Geri",
+            "input": [
+                "fwd",
+                "mk"
+            ],
+            "type": "Command Normals"
+        },
+        {
+            "name": "Fumikomi Soku Barai",
+            "input": [
+                "fwd",
+                "hp"
+            ],
+            "type": "Command Normals"
+        },
+        {
+            "name": "Universal Overhead",
+            "input": [
+                "mp",
+                "mk"
+            ],
+            "type": "Command Normals"
+        },
+        {
+            "name": "Target Combo 1",
+            "input": [
+                "fwd",
+                "mk",
+                "into",
+                "hk"
+            ],
+            "type": "Target Combos"
+        },
+        {
+            "name": "Target Combo 2",
+            "input": [
+                "lk",
+                "into",
+                "mk"
+            ],
+            "type": "Target Combos"
+        },
+        {
+            "name": "Tosshin Seiken-zuki",
+            "input": [
+                "qcf",
+                "p"
+            ],
+            "type": "Input Moves"
+        },
+        {
+            "name": "Chokujou Seiken-zuki",
+            "input": [
+                "dp",
+                "p"
+            ],
+            "type": "Input Moves"
+        },
+        {
+            "name": "Uchi Oroshi Shutou",
+            "input": [
+                "qcb",
+                "p"
+            ],
+            "type": "Input Moves"
+        },
+        {
+            "name": "Tsurushi Nodowa",
+            "input": [
+                "hcb",
+                "k"
+            ],
+            "type": "Input Moves"
+        },
+        {
+            "name": "Senjou Katao Otoshi",
+            "input": [
+                "air",
+                "qcb",
+                "k"
+            ],
+            "type": "Input Moves"
+        },
+        {
+            "name": "Seichuusen Godan-zuki",
+            "input": [
+                "qcf",
+                "qcf",
+                "p"
+            ],
+            "type": "Supers"
+        },
+        {
+            "name": "Abare Tosanami Kudaki",
+            "input": [
+                "qcf",
+                "qcf",
+                "k"
+            ],
+            "type": "Supers"
+        },
+        {
+            "name": "Tanden Renki: Seme no Kata",
+            "input": [
+                "qcf",
+                "qcf",
+                "k"
+            ],
+            "type": "Supers"
+        }
+    ]
 }
