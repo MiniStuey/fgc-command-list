@@ -1,0 +1,99 @@
+{
+  "name": "Necro",
+  "portrait": "necro.png",
+  "moves": [
+    {
+      "name": "Drill Kick",
+      "input": [ "air", "down", "k" ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Elbow",
+      "input": [
+        [ "back", "lp" ],
+        [ "back", "mp" ]
+        ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Necro Upper",
+      "input": [ "back", "hp" ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Knee Dagger",
+      "input": [ "back", "lk" ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Knee Attack",
+      "input": [ "back", "mk" ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Knee Missile",
+      "input": [ "back", "hk" ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Whip Straight",
+      "input": [ "down", "hp" ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Elbow Cannon",
+      "input": [ "db", "hp" ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Universal Overhead",
+      "input": [ "mp", "mk" ],
+      "type": "Command Normals"
+    },
+    {
+      "name": "Target Combo",
+      "input": [ "back", "lk", "into", "mp" ],
+      "type": "Target Combo"
+    },
+    {
+      "name": "Flying Viper",
+      "input": [ "qcb", "p" ],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Rising Cobra",
+      "input": [ "qcb", "k" ],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Tornado Hook",
+      "input": [ "hcf", "p" ],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Snake Fang",
+      "input": [ "hcf", "k" ],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Denji Blast",
+      "input": [ "dp", "p", "into", "mash", "p" ],
+      "type": "Input Moves"
+    },
+    {
+      "name": "Chou Denji Storm",
+      "input": [ "qcf", "qcf", "p", "into", "mash", "p" ],
+      "type": "Supers"
+    },
+    {
+      "name": "Slam Dance",
+      "input": [ "qcf", "qcf", "p"],
+      "type": "Supers"
+    },
+    {
+      "name": "Electric Snake",
+      "input": [ "qcf", "qcf", "p" ],
+      "type": "Supers"
+    }
+  ]
+}
